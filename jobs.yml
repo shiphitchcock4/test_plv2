@@ -3,10 +3,10 @@ jobs:
     type: manifest
     steps:
       - GET resourceVImage
-      - GET resourceVEcsParam
+      #- GET resourceVEcsParam
 
   - name: jobResourceEcsService
     type: ecsDeploy
     steps:
       - GET jobResourceManifest
-      - GET resourceVEcsCluster
+     # - GET resourceVEcsCluster
