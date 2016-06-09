@@ -7,12 +7,12 @@ resources:
       isPull: false
       tag: "latest.25"
 
-  - name: resourceVEcsCluster
-    type: ecsCluster
-    integration: aws-ecscluster
-    source:
-      name : "default" #name of the cluster we are deploying
-      region: "us-west-2"
+  #- name: resourceVEcsCluster
+  #  type: ecsCluster
+   # integration: aws-ecscluster
+  #  source:
+   #   name : "default" #name of the cluster we are deploying
+    #  region: "us-west-2"
 
   - name: resourceVEcsParam #test once more
     type: params
