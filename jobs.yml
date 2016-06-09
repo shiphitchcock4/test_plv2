@@ -1,0 +1,12 @@
+jobs:
+  - name: jobResourceManifest
+    type: manifest
+    steps:
+      - GET resourceVImage
+      - GET resourceVEcsParam
+
+  - name: jobResourceEcsService
+    type: ecsDeploy
+    steps:
+      - GET jobResourceManifest
+      - GET resourceVEcsCluster
