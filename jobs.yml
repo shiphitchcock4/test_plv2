@@ -5,8 +5,8 @@ jobs:
       - GET resourceVImage
       #- GET resourceVEcsParam
 
-  - name: jobResourceEcsService
-    type: ecsDeploy
-    steps:
-      - GET jobResourceManifest
+  #- name: jobResourceEcsService
+   # type: ecsDeploy
+    #steps:
+     # - GET jobResourceManifest
      # - GET resourceVEcsCluster
