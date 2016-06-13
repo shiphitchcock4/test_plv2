@@ -3,13 +3,13 @@ jobs:
     type: manifest
     steps:
       - GET: resourcevtest-image3
-      - GET: resourcev-ecsparam
+      - GET: resourcevtest-ecsparam1
       
   - name: jobvmanifest5
     type: manifest
     steps:
       - GET: resourcevtest-image4
-      - GET: resourcev-ecsparam
+      - GET: resourcevtest-ecsparam1
       - GET: jobvmanifest4
       
   #- name: jobvecsdeploy2
