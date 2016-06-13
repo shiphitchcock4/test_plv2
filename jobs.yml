@@ -4,12 +4,12 @@ jobs:
     steps:
       - GET: resourcevtest-image1
       - GET: resourcev-ecsparam
-     # - GET: resourcev-dockeroption
+      - GET: resourcev-dockeroption
       
   - name: jobvmanifest2
     type: manifest
     steps:
-      #- PUT: resourcevtest-image1
+      - PUT: resourcevtest-image1
       - GET: resourcevtest-image2
       - GET: resourcev-ecsparam
       
