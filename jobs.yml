@@ -4,7 +4,7 @@ jobs:
     steps:
       - GET: resourcevtest-image1
       - GET: resourcevtest-image2
-      #- PUT: resourcevtest-image2
+      - PUT: resourcev-dockeroption
       
   - name: jobvmanifest2
     type: manifest
