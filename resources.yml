@@ -1,33 +1,17 @@
 resources:
-  - name: resourceVImage
+  - name: resourcevtest-image1
     type: image
-    integration: shiphitchcock1-hub
+    integration: cock1-hub #your subs integration for docker hub
     source:
-      name: "shiphitchcock1/pipeline"
+      name: "shiphitchcock1/testsamplenode"
       isPull: false
-      tag: "latest.25"
-
-  #- name: resourceVEcsCluster
-  #  type: ecsCluster
-   # integration: aws-ecscluster
-  #  source:
-   #   name : "default" #name of the cluster we are deploying
-    #  region: "us-west-2"
-
-  - name: resourceVEcsParam #test once more
-    type: params
+      tag: latest
+      
+  - name: resourcevtest-image2
+    type: image
+    integration: cock1-hub #your subs integration for docker hub
     source:
-      params:
-        foo: bar
-        api_url: https://api.shippable.com
-        
-  - name: resourceVDockerOption
-    type: dockerOptions
-    source:
-      memory: 400 # in MB
-      cpu-shares: 0
-      net: "host"
-      volumes: # [host-src:]container-dest[:<options>]
-        - "name:/usr/bin:rw"
-        - "/test/vol:/"
-        
+      name: "shiphitchcock1/sample_python"
+      isPull: true
+      tag: latest
+      
