@@ -1,27 +1,19 @@
 jobs:
-  - name: jobvmanifest1
+  - name: jobvmanifest4
     type: manifest
     steps:
-      - GET: resourcevtest-image1
-      - GET: resourcev-ecsparam
-      - GET: resourcev-dockeroption
-      
-  - name: jobvmanifest2
-    type: manifest
-    steps:
-      - PUT: resourcevtest-image1
-      - GET: resourcevtest-image2
+      - GET: resourcevtest-image3
       - GET: resourcev-ecsparam
       
-  - name: jobvmanifest3
+  - name: jobvmanifest5
     type: manifest
     steps:
-      - GET: jobvmanifest1
-      - GET: jobvmanifest2
+      - GET: resourcevtest-image4
+      - GET: resourcev-ecsparam
+      - GET: jobvmanifest4
       
-  #- name: jobvecsdeploy1
+  #- name: jobvecsdeploy2
    # type: escDeploy
    # steps:
-    #  - GET: jobvmanifest3
-    #  - GET: resourcevtest-ecscluster1
-      
+    #  - GET: jobvmanifest5
+    #  - GET: resourcevtest-ecscluster2
