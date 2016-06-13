@@ -15,6 +15,14 @@ resources:
       isPull: true
       tag: latest
       
+  - name: resourcevtest-ecsparam1 #test once more
+    type: params
+    integration: cock1-ecscluster
+    source:
+      params:
+        foo: booo
+        api_url: https://api.shippable.co
+      
  # - name: resourcevtest-ecscluster2
   #  type: ecsCluster
    # integration: cock1-ecscluster
