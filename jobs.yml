@@ -2,12 +2,12 @@ jobs:
   - name: jobvmanifest1
     type: manifest
     steps:
-      - GET resourcevtest-image1
-      - GET resourcevtest-image2
-      - PUT resourcevtest-image2
+      - GET: resourcevtest-image1
+      - GET: resourcevtest-image2
+      - PUT: resourcevtest-image2
       
   - name: jobvmanifest2
     type: manifest
     steps:
-      - PUT resourcevtest-image1
-      - GET resourcev-image
+      - PUT: resourcevtest-image1
+      - GET: resourcev-image
