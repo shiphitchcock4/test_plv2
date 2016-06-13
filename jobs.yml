@@ -1,12 +1,13 @@
 jobs:
-  - name: jobResourceManifest
+  - name: jobvmanifest1
     type: manifest
     steps:
-      - GET resourceVImage
-      #- GET resourceVEcsParam
-
-  #- name: jobResourceEcsService
-   # type: ecsDeploy
-    #steps:
-     # - GET jobResourceManifest
-     # - GET resourceVEcsCluster
+      - GET resourcevtest-image1
+      - GET resourcevtest-image2
+      - PUT resourcevtest-image2
+      
+  - name: jobvmanifest2
+    type: manifest
+    steps:
+      - PUT resourcevtest-image1
+      - GET resourcev-image
