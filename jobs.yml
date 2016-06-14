@@ -10,10 +10,12 @@ jobs:
     steps:
       - GET: resourcevtest-image5
       - GET: resourcevtest-ecsparam1
+      - GET: resourcevtest-dockeroption1
+      - GET: resourcevtest-replica1
       - GET: jobvmanifest4
       
-  #- name: jobvecsdeploy2
-   # type: escDeploy
-   # steps:
-    #  - GET: jobvmanifest5
-    #  - GET: resourcevtest-ecscluster2
+  - name: jobvecsdeploy2
+    type: escDeploy
+    steps:
+      - GET: jobvmanifest5
+      - GET: resourcevtest-ecscluster2
