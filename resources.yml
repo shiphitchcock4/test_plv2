@@ -1,17 +1,17 @@
 resources:
   - name: resourcevtest-image1
     type: image
-    integration: cock1-hub #your subs integration for docker hub
+    integration: ship4-docker #your subs integration for docker hub
     source:
-      name: "shiphitchcock1/testsamplenode"
+      name: "shiphitchcock4/hitchcock4_sample_node"
       isPull: false
       tag: latest
       
   - name: resourcevtest-image2
     type: image
-    integration: cock1-hub #your subs integration for docker hub
+    integration: ship4-docker #your subs integration for docker hub
     source:
-      name: "shiphitchcock1/sample_python"
+      name: "shiphitchcock4/hitchcock4_sample_node"
       isPull: true
       tag: latest
       
