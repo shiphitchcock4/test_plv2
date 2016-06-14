@@ -3,7 +3,6 @@ jobs:
     type: manifest
     steps:
       - GET: resourcevtest-image1
-      - GET: resourcev-ecsparam
     #  - GET: resourcev-dockeroption
       
   - name: jobvmanifest2
@@ -11,7 +10,7 @@ jobs:
     steps:
      # - PUT: resourcevtest-image1
       - GET: resourcevtest-image2
-      - GET: resourcev-ecsparam
+
       
   - name: jobvmanifest3
     type: manifest
