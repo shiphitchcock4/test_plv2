@@ -52,3 +52,9 @@ resources:
     #integration: shipaws-ecscluster
     source:
       memory: 128 # in MB
+      
+  - name: resourcevtest-replica2
+    type: replicas
+    #integration: shipaws-ecscluster
+    source:
+      count: 1
