@@ -17,7 +17,7 @@ resources:
       
   - name: resourcevtest-ecsparam1 #test once more
     type: params
-    integration: cock1-ecscluster
+    #integration: cock1-ecscluster
     source:
       params:
         foo: booo
@@ -25,7 +25,7 @@ resources:
         
   - name: resourcevtest-dockeroption1
     type: dockerOptions
-    integration: shipaws-ecscluster
+    #integration: shipaws-ecscluster
     source:
       memory: 400 # in MB
       cpu-shares: 0
@@ -36,7 +36,7 @@ resources:
         
   - name: resourcevtest-replica1
     type: replicas
-    integration: shipaws-ecscluster
+    #integration: shipaws-ecscluster
     source:
       count: 1
       
